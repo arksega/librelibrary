@@ -1,0 +1,4 @@
+.ropeproject/
+.uwsgi_plugins_builder/
+env/
+__pycache__/
