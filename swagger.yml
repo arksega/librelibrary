@@ -1,0 +1,70 @@
+swagger: '2.0'
+info:
+  description: Library system to register and reserve book usage
+  version: '1.0.0'
+  title: Swagger REST books
+consumes:
+  - 'application/json'
+produces:
+  - 'application/json'
+
+basePath: '/api'
+
+paths:
+  /library:
+    get:
+      summary: Get all registered books
+      operationId: 'library.read'
+      tags:
+        - 'Library'
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: lists of books
+          schema:
+            type: array
+            items:
+              properties:
+                schema:
+                  $ref: '#/definitions/Book'
+  '/library/{isbn}':
+    get:
+      summary: Get book by ISBN
+      operationId: 'library.get'
+      parameters:
+        - name: isbn
+          in: path
+          required: true
+          type: 'string'
+      tags:
+        - 'Library'
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: book
+          schema:
+            $ref: '#/definitions/Book'
+definitions:
+  Book:
+    type: object
+    additionalProperties: True
+    properties:
+      Autor:
+        type: 'string'
+      Editorial:
+        type: 'string'
+      Título:
+        type: 'string'
+      Año:
+        type: 'number'
+      ISBN:
+        type: 'string'
+    required:
+      - Autor
+      - Editorial
+      - Título
+      - Año
+      - ISBN
+      - Tags

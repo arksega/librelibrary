@@ -1,23 +1,25 @@
-from flask import (Flask, render_template, send_from_directory)
-import os
+import yaml
+from flask import abort
 
-app = Flask(__name__, template_folder='templates')
+with open('biblio.yaml') as fd:
+    raw_data = yaml.load(fd)
 
-
-@app.route('/')
-def home():
-    '''
-    :return:    the rendered template 'home.html'
-    '''
-    return render_template('home.html')
-
-
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(
-               os.path.join(app.root_path, 'static'),
-               'favicon.ico', mimetype='image/vnd.microsoft.icon')
+data = {}
+for book in raw_data:
+    if isinstance(book['ISBN'], int):
+        isbn = str(book['ISBN'])
+    else:
+        isbn = book['ISBN'].replace('-', '')
+    book['ISBN'] = isbn
+    data[isbn] = book
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+def read():
+    return [x for x in data.values()]
+
+
+def get(isbn):
+    if isbn in data:
+        return data[isbn]
+    else:
+        abort(404, 'Book {} not found'.format(isbn))

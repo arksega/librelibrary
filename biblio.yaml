@@ -1,0 +1,428 @@
+#
+# Lista de libros de LinuxCabal A.C.
+#
+
+-
+  Título: Programing the 80386
+  Autor: John H. Crawford y Patrick Gelsinger
+  Año: 1986
+  ISBN: 0895883813
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Sybex
+  Fuente:
+  Tags: Memory, Programación y Multitarea
+  Reseña: Una guía de referencia comprensiva para el set de instrucciones 80386.
+
+
+-
+  Título: Turbo Assembler Bible
+  Autor: Gary Sick
+  Año: 1991
+  ISBN: 0-672-22716-9
+  Idioma: En
+  Formato: Libro
+  Editorial: Sams
+  Fuente: Son expuestos los conceptos básicos así como las instrucciones
+    a aprender para su uso en la programación de sistemas operativos.
+    Aprenderá cómo instrucciones nemotécnicas y cómo mover informaciòn
+    con teorías de lenguaje simple.
+  Tags: Bible, Turbo Assembler.
+  Reseña:
+
+-
+  Título: Using uucp y Usenet
+  Autor: Grace Todino y Dale Dougherty
+  Año: 1991
+  ISBN: 0937175102
+  Idioma: En
+  Formato: Libro
+  Editorial: O'Reilly
+  Fuente:
+  Tags: Unix, manejador de noticias, correos, Unix
+  Reseña: Este manual enseña como comunicarse con UNIX y sistemas no UNIX
+    con UUCP y cu y tip. También muestra cómo leer noticias y postear sus
+    artículos y correo a otros.
+
+
+-
+  Título: Using Samba
+  Autor: Roberto Ekstein, David Collier-Brown y Peter Kelly
+  Año: 2000
+  ISBN: 1565924495
+  Idioma: En
+  Formato: Libro
+  Editorial: O'Reilly
+  Fuente:
+  Tags: Samba, Windows, Network,
+  Reseña: Este libro, con Open Content Licence, es una guía comprensiva para
+    la administración de Samba, incluyendo recientes adiciones como integración
+    los dominios de Windows NT y la herramienta gráfica de configuración.
+
+
+-
+  Título: Sendmail
+  Autor: Bryan Costales
+  Año: 1997
+  ISBN: 1565922220
+  Idioma: EN
+  Formato: Libro
+  Editorial: O'Reilly
+  Fuente:
+  Tags:  correo, redes, configuración
+  Reseña: Esta edición cubre sendmail Versión 8.8 de Berkely y, la versión
+    disponible en la mayoría de los sistemas.
+
+
+-
+  Título: System Performance Tunning.
+  Autor: Mike Loukides
+  Año: 1991
+  ISBN: 0937175609
+  Idioma: EN
+  Formato: Libro
+  Editorial: O'Reilly
+  Fuente:
+  Tags:  Sistemas, UNIX, BSD
+  Reseña: "El libro responde una de las preguntas más fundamentales que te
+          puedes preguntar sobre tu computadora : ¿Cómo puedo hacer más sin comprar más
+          hardware?"
+
+
+-
+  Título: Essential System Administration
+  Autor: Aeleen Frisch
+  Año: 1992
+  ISBN: 0937175803
+  Idioma: EN
+  Formato: Libro
+  Editorial: O'Reilly
+  Fuente: Libro
+  Tags:  Sistemas, UNIX, Seguridad
+  Reseña: Como cualquier otro multy user system, UNIX requiere cuidado y
+    configuración, este libro lo hace. Provee un compacto, tratamiento
+    manejable de cada asuntos y tareas que todo responsable de un sistema UNIX
+    enfrentar.
+
+
+-
+  Título: Managing IP Networks with Cisco Routers
+  Autor: Scott M. Balley
+  Año: 1997
+  ISBN: 1565923200
+  Idioma: EN
+  Formato: Libro
+  Editorial: O'Reilly
+  Fuente: Libro
+  Tags:  Cisco, Reuters. Networks,
+  Reseña: Los Routers son el pegamento que conecta las piezas de tu red. Hasta
+    las más simples redes, esto no es una tarea sencilla. Reuters han
+    evolucionado en plataformas computacionales especializadas, con habilidades
+    altamente flexibles y complejas.
+
+-
+  Título: The Waite Group's Microsoft C Bible (Second Edition)
+  Autor: Naba Barkakati
+  Año: 1990
+  ISBN: 0672227363
+  Idioma: EN
+  Formato: Libro
+  Editorial: SAMS
+  Fuente: Libro
+  Tags: Programación, Microsoft C 6.0, Bible
+  Reseña: Este libro incluye más de 500 ejemplos de funciones de la librería
+    de Microsoft C 6.0. Contiene ejemplos del mundo real en cada rutina.
+    Contiene, además, tutoriales interactivos. Las rutinas de cada librería
+    están categorizadas por funciones. Contiene una tabla de compatibilidad
+    con otras versiones de C.
+
+-
+  Título: MySQL Avanzado
+  Autor: Jeremy D. Zawodny y Derek J. Balling
+  Año: 2004
+  ISBN: 8441517592
+  Idioma: ES
+  Formato: Libro
+  Editorial: ANAYA O'reilly
+  Fuente:
+  Tags: MySQL, Base de Datos, DB, Medio, Avanzado
+  Reseña:
+
+    MySQL Avanzado le presenta los métodos, consejos y
+    aplicaciones para que pueda obtener el máximo partido
+    a dos aspectos clave como son la indexación y la
+    optimización.
+
+
+-
+  Título: DNS and BIND, 3rd Edition
+  Autor: Paul Albitz and Cricket Liu
+  Año: 1998
+  ISBN: 1565925122
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: O'REILLY
+  Fuente:
+  Tags: DNS, BIND, Redes, Network
+  Reseña:
+
+    Este libro discute uno de los Bloques de construcción
+    fundamentales. Hosts de Bases de Información Distribuidos
+    que son responsables de traducir nombres en direcciones
+    entre muchos otros servicios.
+
+
+-
+  Título: Manual de referencia de PERL
+  Autor: Martin C. Brown
+  Año: 2001
+  ISBN: 8448128842
+  Idioma: Español
+  Formato: Libro
+  Editorial: McGraw-Hill
+  Fuente:
+  Tags: PERL, Manual, Referencia, Script, Avanzado
+  Reseña:
+    Muestra como escribir script PERL multiplataforma
+    con los que genera informes a partir de archivos de texto.
+
+-
+  Título: Algorithms with Perl
+  Autor: Jon Orvant, Jarrko Hietnaniemi & John Macdonald
+  Año: 1999
+  ISBN: 1-56592-398-7
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: O'Reilly
+  Fuente: 
+  Tags: Perl, Programación
+  Reseña:
+
+-
+  Título: Learning Perl
+  Autor: Randal L. Schwartz
+  Año: 1993
+  ISBN: 1-56592-042-2
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: O'Reilly
+  Fuente: 
+  Tags: Perl, Programación
+  Reseña:
+
+-
+  Título: PHP & MySQL for DUMMIES
+  Autor: Janet Valade
+  Año: 2002
+  ISBN: 0-7645-1650-7
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Hungry Mindsi, Inc.
+  Fuente: 
+  Tags: PHP, MySQL, Programación
+  Reseña:
+
+-
+  Título: Zend framework in action
+  Autor: Rob Allen, Nick Lo, Steven Brown
+  Año: 2009
+  ISBN: 1933988320
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Manning Publications Co.
+  Fuente: 
+  Tags: PHP, Zend, Programación
+  Reseña:
+
+-
+  Título: Advanced PHP programming
+  Autor: George schlossnagle
+  Año: 2004
+  ISBN: 0-672-32561-6
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Sams Publishing
+  Fuente: 
+  Tags: PHP, Programación
+  Reseña:
+    A practical guide to developing large-scale
+    web sites and applications with PHP 5.
+
+-
+  Título: Turbo C++
+  Autor: Ira Pohl
+  Año: 1991
+  ISBN: 0-8053-6017-4
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: The Benjamin/Cummings Publishing Company Inc.
+  Fuente: 
+  Tags: C++, Programación
+  Reseña:
+    Un tutorial y referencia  de programación en Turbo C++
+    con ejemplos completos y probados, recorridos del
+    código y muchos ejercicios.
+
+-
+  Título: PHP pocket reference
+  Autor: Rasmus Lerdorf
+  Año: 2000
+  ISBN: 1-56592-769-9
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: O'Reilly Associates
+  Fuente: 
+  Tags: PHP, Programación
+  Reseña:
+    Esta referencia de bolsillo enumera
+    la sintaxis y estructura básicas de
+    PHP, así como un acceso rapido a la
+    amplia lista de funciones de PHP.
+
+-
+  Título: The C programming language
+  Autor: Brian W. Kerninghan, Dennis M. Ritchie
+  Año: 1978
+  ISBN: 0-13-110163-3
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Prentice-Hall International
+  Fuente: 
+  Tags: C, Programación
+  Reseña:
+    El libro clásico del lenguage C
+    por sus desarrolladores.
+-
+  Título: C, a reference, Third edition
+  Autor: Samuel P. Harbison, Guy L. Steele Jr.
+  Año: 1991
+  ISBN: 0-13-110941-3
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Prentice-Hall, Inc.
+  Fuente: 
+  Tags: C, Programación
+  Reseña:
+    Una referencia del lenguage C, cubriendo
+    el estándar ANSI.  Presenta el lenguage de
+    abajo hacia arriba, y está organizado para
+    consulta rápida.
+
+-
+  Título: Instant C++ programming
+  Autor: Ian Wilks
+  Año: 1994
+  ISBN: 1-874416-29-X
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Wrox Press Ltd.
+  Fuente: 
+  Tags: C++, Programación
+  Reseña:
+    Un rápido tutorial enseña todo lo 
+    necesario en un instante y permite
+    escribir programas desde el primer
+    día.
+
+-
+  Título: El lenguaje de programación C++
+  Autor: Bjarne Stroustrup
+  Año: 2002
+  ISBN: 0-201-7007305
+  Idioma: Español
+  Formato: Libro
+  Editorial: Addison Wesley
+  Fuente: 
+  Tags: C++, Programación
+  Reseña:
+    El libro más leído y utilizado mundialmente
+    para aprender a programar en C++.  Bjarne
+    Stroustrup es el creador y diseñador original
+    de C++.
+
+-
+  Título: iAPX 86/88, 186/188 User's Manual, Programmer's Reference
+  Autor: Intel Corporation
+  Año: 1986
+  ISBN: 1-55512-010-5
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Intel Literature
+  Fuente: 
+  Tags: 8086, Microprocessor, Programación
+  Reseña:
+    Una introducción a las microcomputadoras,
+    seguida de la arquitectura, instrucciones
+    y diseño de la familia 86, 88, 186, 188.
+
+-
+  Título: The Waite's Group New C Primer Plus
+  Autor: Mitchell Waite y Stephen Prata
+  Año: 1990
+  ISBN: 0672226871
+  Idioma: EN
+  Formato: Libro
+  Editorial: SAMS
+  Fuente: Libro
+  Tags: ANSI C, UNIX, Microsoft C, Turbo C, Programación
+  Reseña: Pendiente...
+
+-
+  Título: C++ Primer Plus, Fifht Edition
+  Autor: Stephen Prata
+  Año: 2004
+  ISBN: 0672326973
+  Idioma: EN
+  Formato: Libro
+  Editorial: SAMS
+  Fuente: Libro
+  Tags: C++, Programacion
+  Reseña: El libro es un tutorial muy completo sobre programacion en C++,
+    Muestra los principios basicos de programacion en C++ abarca desde
+    programacion estructurada a orientada a objetos. Viene muy completo y con
+    ejemplos practicos de programacion
+
+-
+  Título: The C Programming Tutor
+  Autor: Leon A. Wortman, Thomas O. Sidebottom
+  Año: 1984
+  ISBN: 0893033642
+  Idioma: EN
+  Formato: Libro
+  Editorial: Prentice Hall
+  Fuente: Libro
+  Tags: C, Programacion
+  Reseña: Libro tutorial de programacion de C, abarca mas que nivel basico,
+    por ser un libro con bastantes años el autor entra sin dificultades a
+    punteros, arreglos, manejo de errores variables, expresiones condicionales
+    etc. Nivel medio/avanzado.
+
+-
+  Título: C Database Development
+  Autor: Al Stevens
+  Año: 1991
+  ISBN: 1558281363
+  Idioma: EN
+  Formato: Libro
+  Editorial: Mis Press
+  Fuente: Libro
+  Tags: C, Programacion, Base de datos
+  Reseña: Libro centrado en desarrollo de motores de base de datos en C,
+    maneja sin problemas estructuras complejas de base de datos, arboles,
+    Fundamentos de Base de datos, Diseño de bases de datos, DBMS, etc.
+    Nivel medio/avanzado
+
+-
+  Título: An Introduction to Programming in C
+  Autor: Al Kelley, Ira Phol 
+  Año: 1984
+  ISBN: 085368604
+  Idioma: EN
+  Formato: Libro
+  Editorial: Benjamin Cummings
+  Fuente: Libro
+  Tags: C, Programacion
+  Reseña: Ya seas un principiante o un profesional experimentado A Book on C
+    es una guia indispensable para cualquier programador.Facil de seguir paso a
+    paso, Nivel principiante.
+
