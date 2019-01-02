@@ -7,7 +7,7 @@
   Autor: John H. Crawford y Patrick Gelsinger
   Año: 1986
   ISBN: 0895883813
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: Sybex
   Fuente:
@@ -20,22 +20,22 @@
   Autor: Gary Sick
   Año: 1991
   ISBN: 0-672-22716-9
-  Idioma: En
+  Idioma: EN
   Formato: Libro
   Editorial: Sams
-  Fuente: Son expuestos los conceptos básicos así como las instrucciones
+  Fuente:
+  Tags: Bible, Turbo Assembler.
+  Reseña: Son expuestos los conceptos básicos así como las instrucciones
     a aprender para su uso en la programación de sistemas operativos.
     Aprenderá cómo instrucciones nemotécnicas y cómo mover informaciòn
     con teorías de lenguaje simple.
-  Tags: Bible, Turbo Assembler.
-  Reseña:
 
 -
   Título: Using uucp y Usenet
   Autor: Grace Todino y Dale Dougherty
   Año: 1991
   ISBN: 0937175102
-  Idioma: En
+  Idioma: EN
   Formato: Libro
   Editorial: O'Reilly
   Fuente:
@@ -50,7 +50,7 @@
   Autor: Roberto Ekstein, David Collier-Brown y Peter Kelly
   Año: 2000
   ISBN: 1565924495
-  Idioma: En
+  Idioma: EN
   Formato: Libro
   Editorial: O'Reilly
   Fuente:
@@ -159,7 +159,7 @@
   Autor: Paul Albitz and Cricket Liu
   Año: 1998
   ISBN: 1565925122
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: O'REILLY
   Fuente:
@@ -177,7 +177,7 @@
   Autor: Martin C. Brown
   Año: 2001
   ISBN: 8448128842
-  Idioma: Español
+  Idioma: ES
   Formato: Libro
   Editorial: McGraw-Hill
   Fuente:
@@ -191,7 +191,7 @@
   Autor: Jon Orvant, Jarrko Hietnaniemi & John Macdonald
   Año: 1999
   ISBN: 1-56592-398-7
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: O'Reilly
   Fuente: 
@@ -203,7 +203,7 @@
   Autor: Randal L. Schwartz
   Año: 1993
   ISBN: 1-56592-042-2
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: O'Reilly
   Fuente: 
@@ -215,7 +215,7 @@
   Autor: Janet Valade
   Año: 2002
   ISBN: 0-7645-1650-7
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: Hungry Mindsi, Inc.
   Fuente: 
@@ -227,7 +227,7 @@
   Autor: Rob Allen, Nick Lo, Steven Brown
   Año: 2009
   ISBN: 1933988320
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: Manning Publications Co.
   Fuente: 
@@ -239,7 +239,7 @@
   Autor: George schlossnagle
   Año: 2004
   ISBN: 0-672-32561-6
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: Sams Publishing
   Fuente: 
@@ -253,7 +253,7 @@
   Autor: Ira Pohl
   Año: 1991
   ISBN: 0-8053-6017-4
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: The Benjamin/Cummings Publishing Company Inc.
   Fuente: 
@@ -268,7 +268,7 @@
   Autor: Rasmus Lerdorf
   Año: 2000
   ISBN: 1-56592-769-9
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: O'Reilly Associates
   Fuente: 
@@ -284,7 +284,7 @@
   Autor: Brian W. Kerninghan, Dennis M. Ritchie
   Año: 1978
   ISBN: 0-13-110163-3
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: Prentice-Hall International
   Fuente: 
@@ -297,7 +297,7 @@
   Autor: Samuel P. Harbison, Guy L. Steele Jr.
   Año: 1991
   ISBN: 0-13-110941-3
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: Prentice-Hall, Inc.
   Fuente: 
@@ -313,7 +313,7 @@
   Autor: Ian Wilks
   Año: 1994
   ISBN: 1-874416-29-X
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: Wrox Press Ltd.
   Fuente: 
@@ -329,7 +329,7 @@
   Autor: Bjarne Stroustrup
   Año: 2002
   ISBN: 0-201-7007305
-  Idioma: Español
+  Idioma: ES
   Formato: Libro
   Editorial: Addison Wesley
   Fuente: 
@@ -345,7 +345,7 @@
   Autor: Intel Corporation
   Año: 1986
   ISBN: 1-55512-010-5
-  Idioma: Inglés
+  Idioma: EN
   Formato: Libro
   Editorial: Intel Literature
   Fuente: 
