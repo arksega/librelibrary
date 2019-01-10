@@ -1,25 +1,30 @@
-import yaml
+import sqlalchemy.orm.exc as ormexc
+from sqlalchemy import exc as pyormexc
 from flask import abort
+import orm
 
-with open('biblio.yaml') as fd:
-    raw_data = yaml.load(fd)
-
-data = {}
-for book in raw_data:
-    if isinstance(book['ISBN'], int):
-        isbn = str(book['ISBN'])
-    else:
-        isbn = book['ISBN'].replace('-', '')
-    book['ISBN'] = isbn
-    data[isbn] = book
+session = orm.init()
 
 
 def read():
-    return [x for x in data.values()]
+    return [dict(item) for item in session.query(orm.Book).all()]
 
 
 def get(isbn):
-    if isbn in data:
-        return data[isbn]
-    else:
+    try:
+        r = session.query(orm.Book).filter(orm.Book.isbn == isbn).one()
+        return dict(r)
+    except ormexc.NoResultFound:
         abort(404, 'Book {} not found'.format(isbn))
+
+
+def create(book):
+    orm_book = orm.Book()
+    try:
+        orm_book.update(book)
+        session.add(orm_book)
+        session.commit()
+    except pyormexc.IntegrityError:
+        session.rollback()
+        abort(409, 'ISBN {} already exist'.format(orm_book.isbn))
+    return dict(orm_book)

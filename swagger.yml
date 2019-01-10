@@ -28,15 +28,29 @@ paths:
               properties:
                 schema:
                   $ref: '#/definitions/Book'
+    post:
+      summary: Create a new book
+      operationId: 'library.create'
+      parameters:
+        - name: book
+          in: body
+          schema:
+            $ref: '#/definitions/Book'
+      tags:
+        - 'Library'
+      produces:
+        - application/json; charset=UTF-8
+      responses:
+        '200':
+          description: return book information
+          schema:
+            $ref: '#/definitions/Book'
   '/library/{isbn}':
     get:
       summary: Get book by ISBN
       operationId: 'library.get'
       parameters:
-        - name: isbn
-          in: path
-          required: true
-          type: 'string'
+        - $ref: '#/parameters/isbn'
       tags:
         - 'Library'
       produces:
@@ -46,25 +60,33 @@ paths:
           description: book
           schema:
             $ref: '#/definitions/Book'
+parameters:
+  isbn:
+    name: isbn
+    description: Book ISBN
+    in: path
+    type: string
+    required: true
+    pattern: "^[0-9-]+$"
+
 definitions:
   Book:
     type: object
     additionalProperties: True
     properties:
-      Autor:
+      author:
         type: 'string'
-      Editorial:
+      editorial:
         type: 'string'
-      Título:
+      title:
         type: 'string'
-      Año:
-        type: 'number'
-      ISBN:
+      year:
+        type: 'string'
+      isbn:
         type: 'string'
     required:
-      - Autor
-      - Editorial
-      - Título
-      - Año
-      - ISBN
-      - Tags
+      - author
+      - editorial
+      - title
+      - year
+      - isbn
