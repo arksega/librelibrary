@@ -18,6 +18,15 @@ def get(isbn):
         abort(404, 'Book {} not found'.format(isbn))
 
 
+def delete(isbn):
+    try:
+        session.query(orm.Book).filter(orm.Book.isbn == isbn).delete()
+        session.commit()
+        return '', 204
+    except ormexc.NoResultFound:
+        abort(404, 'Book {} not found'.format(isbn))
+
+
 def create(book):
     orm_book = orm.Book()
     try:

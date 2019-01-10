@@ -38,13 +38,11 @@ paths:
             $ref: '#/definitions/Book'
       tags:
         - 'Library'
-      produces:
-        - application/json; charset=UTF-8
       responses:
         '200':
-          description: return book information
-          schema:
-            $ref: '#/definitions/Book'
+          description: Book was deleted
+        '404':
+          description: Book does not exist
   '/library/{isbn}':
     get:
       summary: Get book by ISBN
@@ -60,6 +58,22 @@ paths:
           description: book
           schema:
             $ref: '#/definitions/Book'
+        '404':
+          description: Book does not exist
+    delete:
+      summary: Delete book by ISBN
+      operationId: 'library.delete'
+      parameters:
+        - $ref: '#/parameters/isbn'
+      tags:
+        - 'Library'
+      produces:
+        - application/json
+      responses:
+        '204':
+          description: book
+        '404':
+          description: Book does not exist
 parameters:
   isbn:
     name: isbn
