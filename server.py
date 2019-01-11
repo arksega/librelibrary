@@ -2,7 +2,7 @@ from flask import render_template, send_from_directory
 import connexion
 import os
 
-app = connexion.FlaskApp(__name__, specification_dir='./')
+application = app = connexion.FlaskApp(__name__, specification_dir='./')
 app.add_api('swagger.yml', strict_validation=True, validate_responses=True)
 
 
