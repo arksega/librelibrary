@@ -22,7 +22,6 @@ def delete(isbn):
     try:
         session.query(orm.Book).filter(orm.Book.isbn == isbn).delete()
         session.commit()
-        return '', 204
     except ormexc.NoResultFound:
         abort(404, 'Book {} not found'.format(isbn))
 
@@ -36,4 +35,20 @@ def create(book):
     except pyormexc.IntegrityError:
         session.rollback()
         abort(409, 'ISBN {} already exist'.format(orm_book.isbn))
-    return dict(orm_book)
+    return book, 201
+
+
+def update(isbn, book):
+    book['isbn'] = isbn
+    try:
+        orm_book = session.query(orm.Book).filter(orm.Book.isbn == isbn).one()
+        orm_book.update(book)
+        session.commit()
+        return '', 204
+    except ormexc.NoResultFound:
+        orm_book = orm.Book()
+        orm_book.update(book)
+        session.add(orm_book)
+        session.commit()
+        return book, 201
+    return book
