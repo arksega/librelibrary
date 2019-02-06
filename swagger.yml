@@ -39,13 +39,11 @@ paths:
       tags:
         - 'Library'
       responses:
-        '200':
-          description: Book was deleted
-        '404':
-          description: Book does not exist
+        '201':
+          description: Book was created
   '/library/{isbn}':
     put:
-      summary: Update a new book
+      summary: Update a book
       operationId: 'library.update'
       parameters:
         - $ref: '#/parameters/isbn'
@@ -57,7 +55,7 @@ paths:
         - 'Library'
       responses:
         '200':
-          description: Book was deleted
+          description: Book was updated
         '404':
           description: Book does not exist
     get:
@@ -87,7 +85,7 @@ paths:
         - application/json
       responses:
         '204':
-          description: book
+          description: Book deleted
         '404':
           description: Book does not exist
 parameters:
