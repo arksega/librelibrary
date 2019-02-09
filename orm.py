@@ -1,6 +1,7 @@
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, String, create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import scoped_session
 
 Base = declarative_base()
 
@@ -36,9 +37,11 @@ class Book(Base, SQLAlchemyDict):
 
 def init(constr=None):
     if not constr:
-        constr = 'sqlite:///dbtest'
+        # constr = 'postgresql://library:1234@localhost/library'
+        # constr = 'sqlite:///library.db'
+        constr = 'sqlite:///:memory:'
     engine = create_engine(constr)
-    session = sessionmaker()
-    session.configure(bind=engine)
+    session_factory = sessionmaker(bind=engine)
+    session = scoped_session(session_factory)
     Base.metadata.create_all(engine)
-    return session()
+    return session
