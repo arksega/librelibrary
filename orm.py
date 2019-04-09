@@ -38,8 +38,8 @@ class Book(Base, SQLAlchemyDict):
 def init(constr=None):
     if not constr:
         # constr = 'postgresql://library:1234@localhost/library'
-        # constr = 'sqlite:///library.db'
-        constr = 'sqlite:///:memory:'
+        constr = 'sqlite:///library.db'
+        # constr = 'sqlite:///:memory:'
     engine = create_engine(constr)
     session_factory = sessionmaker(bind=engine)
     session = scoped_session(session_factory)
