@@ -3,14 +3,17 @@ from sqlalchemy import exc as pyormexc
 from flask import abort
 import orm
 
-session = orm.init()
+Session = orm.init()
+session = Session()
 
 
 def read():
+    session = Session()
     return [dict(item) for item in session.query(orm.Book).all()]
 
 
 def get(isbn):
+    session = Session()
     try:
         r = session.query(orm.Book).filter(orm.Book.isbn == isbn).one()
         return dict(r)
@@ -19,6 +22,7 @@ def get(isbn):
 
 
 def delete(isbn):
+    session = Session()
     try:
         session.query(orm.Book).filter(orm.Book.isbn == isbn).delete()
         session.commit()
@@ -27,18 +31,23 @@ def delete(isbn):
 
 
 def create(book):
+    session = Session()
     orm_book = orm.Book()
-    try:
-        orm_book.update(book)
-        session.add(orm_book)
-        session.commit()
-    except pyormexc.IntegrityError:
-        session.rollback()
-        abort(409, 'ISBN {} already exist'.format(orm_book.isbn))
-    return book, 201
+    retry = True
+    while retry:
+        try:
+            orm_book.update(book)
+            session.add(orm_book)
+            session.commit()
+            retry = False
+        except (pyormexc.IntegrityError, pyormexc.InvalidRequestError):
+            session.rollback()
+            abort(409, 'ISBN {} already exist'.format(orm_book.isbn))
+        return book, 201
 
 
 def update(isbn, book):
+    session = Session()
     book['isbn'] = isbn
     try:
         orm_book = session.query(orm.Book).filter(orm.Book.isbn == isbn).one()
